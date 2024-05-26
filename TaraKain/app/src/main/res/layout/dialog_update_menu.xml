@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_trivia_bg"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+    <ImageView
+        android:id="@+id/update_img"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add"
+        app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/dialog_update_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_title"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:background="@drawable/rounded_bg"/>
+
+    <EditText
+        android:id="@+id/dialog_update_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/input_price"
+        android:padding="10dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_bg"/>
+    <EditText
+        android:id="@+id/dialog_update_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_description"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/rounded_bg"/>
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <ImageView
+        android:id="@+id/dialog_save_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/save_changes"
+        android:scaleType="center"
+        app:tint="@color/white" />
+
+</LinearLayout>

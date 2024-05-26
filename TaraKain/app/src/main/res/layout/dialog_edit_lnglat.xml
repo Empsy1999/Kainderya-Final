@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_trivia_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/add_location"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/dialog_input_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_latitude"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="numberDecimal"
+        android:background="@drawable/rounded_bg"/>
+
+    <EditText
+        android:id="@+id/dialog_input_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_longitude"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="numberDecimal"
+        android:background="@drawable/rounded_bg"/>
+
+    <ImageView
+        android:id="@+id/dialog_save_loc_info"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/save_changes"
+        android:scaleType="center"
+        app:tint="@color/white" />
+
+</LinearLayout>

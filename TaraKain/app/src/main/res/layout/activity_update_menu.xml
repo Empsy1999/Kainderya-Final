@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".UpdateMenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="@color/bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/logo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_bg"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:id="@+id/eatery_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_logo" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/update_eatery_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/rounded_bg"
+                        android:text="@string/eatery_name"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        tools:ignore="NestedWeights"
+                        app:drawableEndCompat="@drawable/ic_edit" />
+
+                    <TextView
+                        android:id="@+id/update_owner_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/rounded_bg"
+                        android:text="@string/owner_name"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        tools:ignore="NestedWeights"/>
+
+                    <TextView
+                        android:id="@+id/update_eatery_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/rounded_bg"
+                        android:text="@string/address"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        tools:ignore="NestedWeights"
+                        app:drawableEndCompat="@drawable/ic_edit"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.4"
+                android:gravity="bottom"
+                android:paddingBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/update_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/rounded_bg"
+                    android:hint="@string/update_menu"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_input"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:padding="4dp"
+                android:background="@drawable/rounded_bg">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    tools:ignore="NestedWeights" >
+
+                    <LinearLayout
+                        android:id="@+id/show_menu_lyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginStart="5dp">
+
+                    <ImageView
+                        android:id="@+id/show_menu"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/show_menu"
+                        android:layout_gravity="center"
+                        android:scaleType="center"
+                        app:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu1"
+                            android:layout_gravity="center"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/show_review_lyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/show_menu_lyt"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:text="@string/menu"
+                        android:src="@drawable/ic_reviews"
+                        app:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reviews"
+                            android:layout_gravity="center"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/add_menu_lyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+
+                    <ImageView
+                        android:id="@+id/add_menu"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/add_new_menu"
+                        android:scaleType="center"
+                        app:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_menu"
+                            android:layout_gravity="center"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.4"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@drawable/update_menu_bg"
+                            android:layout_weight="0.4"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:weightSum="5">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/update_menu_bg"
+                                android:text="@string/title_edit"
+                                android:gravity="center"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:textColor="@color/update_txt_clr"
+                                tools:ignore="NestedWeights" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/update_menu_bg"
+                                android:text="@string/picture"
+                                android:gravity="center"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:textColor="@color/update_txt_clr"
+                                tools:ignore="NestedWeights" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/update_menu_bg"
+                                android:text="@string/menu1"
+                                android:gravity="center"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:textColor="@color/update_txt_clr"
+                                tools:ignore="NestedWeights" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/update_menu_bg"
+                                android:text="@string/description"
+                                android:gravity="center"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:textColor="@color/update_txt_clr"
+                                tools:ignore="NestedWeights" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/update_menu_bg"
+                                android:text="@string/priceTxt"
+                                android:gravity="center"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:textColor="@color/update_txt_clr"
+                                tools:ignore="NestedWeights" />
+
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/edit_menu_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.6"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/bottom_img"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                android:paddingBottom="110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/menu" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

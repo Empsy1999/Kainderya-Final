@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "111855780191",
+    "project_id": "tarakain-2ea95",
+    "storage_bucket": "tarakain-2ea95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111855780191:android:ded2a6ece5e804ba45b6ea",
+        "android_client_info": {
+          "package_name": "com.eatery.tarakain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111855780191-2ef56eqfkose591nf7sjrhs49linue67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIzVLeC-LM70vlV7nwl8L-Bu7UdXItRsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111855780191-2ef56eqfkose591nf7sjrhs49linue67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_stroke_bg"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/close_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_cancel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:tint="@color/white" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/eatery_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:layout_margin="5dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/eatery_name"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_toEndOf="@id/eatery_img"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="@string/eatery_name"
+        android:layout_toStartOf="@id/close_img"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/owner_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/eatery_img"
+        android:layout_below="@id/eatery_name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="@string/address"
+        android:layout_toStartOf="@id/close_img"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner_email"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        android:padding="5dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/show_menu_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:text="@string/show_menu"
+            android:background="@drawable/rounded_trivia_bg"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/show_reviews_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:text="@string/reviews"
+            android:background="@drawable/rounded_trivia_bg"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
